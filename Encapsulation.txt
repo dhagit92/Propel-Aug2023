@@ -1,0 +1,109 @@
+Encapsulation
+
+Used to restrict accessing the properties of a class to the outside world
+
+in this,  the sensitive dataa is hidden from the users
+
+use access specifiers to clare fields as private
+
+use properties to create public get and set methods to access and update the private members
+
+
+Access specifiers/modifiers
+
+are used to define the scope of the TYPE as well as the scope of their MEMBERS
+
+TYPE:
+ classes, structs, enum, interfaces, delegates
+
+type members:
+variables, properties, constructors, methods within a type
+
+popular access specifiers
+1. public   -- accessible for all the classes
+2. private  -- within the class
+3. protected  -- within same class and inherited class
+4. Internal  -- only within files in the same assembly(.dll)
+
+also protected internal, privvate protected etc.
+
+
+Protected access Modifier
+----------------------------
+
+We know that protected members are accessible in the same class or in the inherited class
+
+But inorder to access the protected member of parent class inside child class, access the protected member using child class's object
+
+
+Internal access specifier
+
+internal members are accessible within the same assembly group
+
+an assembly is a project that has been compiled  into a .DLL or .EXE for the purpose of VisualStudio
+
+we can logically call a project as an assembly group
+
+
+Important
+
+I) Public access specifier is the global access specifier
+
+
+ie. it is accessible 
+1. inside the same class
+2. outside the class
+3. in same assembly(within the project)  --  add name space
+4. in different assembly(in different projects)  
+         -- add reference
+         -- make the class public
+         -- add name space
+
+II) Internal access specifier is only accessible in the same assembly(not posible in different projects)
+
+how to add reference:
+
+select project -> add->reference->projects-> select the project you want to add
+OR
+goto project->references->projects-> select the project you want to add
+
+
+* The default access specifier for a class is internal
+
+Types
+most fundamental type  -> class
+ internal, public
+
+type members  -> all the 5 types
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
